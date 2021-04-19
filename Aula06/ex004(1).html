@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso em Video</title>
+    <style>
+        body{
+            background-color: rgb(43, 43, 43);
+            color: #ffffff;
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+
+<body>
+ 
+    <script>
+        var n1 = Number(prompt('Digite um numero qualquer:'))
+        document.write(`<p>${n1.toFixed(2)} Numero com duas casas decimais</p>`)
+        document.write(`<p>${n1.toFixed(2).replace('.',',')} Ponto trocado por virgula</p>`)
+        document.write(`<P>${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} Valor em Reais</p>`)
+        document.write(`<P>${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})} Valor em Dolar</p>`)
+        document.write(`<P>${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})} Valor em Euro </p>`)
+    </script>
+</body>
+
+</html> 

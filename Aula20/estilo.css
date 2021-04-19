@@ -1,0 +1,34 @@
+body{
+    background: rgb(79, 81, 214);
+    font: normal 15pt arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background: white;
+    border-radius: 5px;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.411);
+}
+
+div{
+    text-align: center;
+    padding: 10px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+.tarde{
+    background: rgb(65,58,58);
+    background: linear-gradient(0deg, rgba(65,58,58,1) 21%, rgba(255,111,0,1) 92%);
+}

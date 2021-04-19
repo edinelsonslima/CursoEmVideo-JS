@@ -1,0 +1,41 @@
+body{
+    background: rgb(24, 24, 117);
+    font: normal 15pt arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background: rgba(0, 0, 0, 0.342);
+    border-radius: 5px;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.411);
+    color: white;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+#res{
+    text-align: center;
+    border: 1px solid;
+    padding-top: 10px;
+}
+#foto{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+#form{
+    border: 1px solid;
+    margin-bottom: 5px;
+    padding-left: 15px;
+}

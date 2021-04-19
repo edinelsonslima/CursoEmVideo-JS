@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso em Video</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+            background-color:rgba(32, 30, 30, 0.836);
+            color: white;
+        }
+        input{
+            width: 100px;
+            font: normal 20pt Arial;
+        }
+        #somar{
+            margin: 10px;
+            width: 220px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type='number' name='txtn1' id='txtn1'> +
+    <input type='number' name='txtn2' id='txtn2'> =
+    <label id = 'res'> Calculando... </label><br>
+    <input id = 'somar' type='button' value ='somar' onclick='somar()'> 
+
+    <script>
+        function somar(){
+            var txtn1 = document.querySelector('#txtn1')
+            var txtn2 = document.querySelector('#txtn2')
+            var res = document.querySelector('#res')
+
+            var n1 = Number(txtn1.value)
+            var n2 = Number(txtn2.value)
+
+            var r = n1 + n2
+
+            res.innerHTML = r
+ 
+        }
+    </script>
+</body>
+</html>

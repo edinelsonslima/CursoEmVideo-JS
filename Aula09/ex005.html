@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso em video</title>
+    <style>
+        body{
+            background: rgba(0, 0, 0, 0.815);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos de DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id='msg'>Clique em mim "id"</div>
+    <div class='btn'>Clique em mim "class"</div>
+    
+    <script>
+        /*
+        document.getElementsByTagName('tag')[]      //Seleção por MARCA
+        document.getElementById('id')               //Seleção por ID
+        document.getElementsByName('name')[]        //Seleção por NAME
+        document.getElementsByClassName('class')[]  //Seleção por CLASS
+        
+        -----------------------Mais Atuais--------------------------
+        document.querySelector('Seletor CSS')       //Seleção por Seletores CSS
+        document.querySelectorAll('Seletor CSS')    //Seleção por Seletores CSS
+
+        innerText //Altera o texto sem elementos html
+        innerHTML //Altera o texto com os elementos html
+        */
+
+        var divId = document.querySelector('#msg')
+        divId.style.background = 'gray'       
+        
+        var divClass = document.querySelector('.btn')
+        divClass.style.background = 'blue'
+
+        
+
+    </script>
+</body>
+</html>
+

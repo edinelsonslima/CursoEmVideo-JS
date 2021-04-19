@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso em Video</title>
+    <style>
+        
+        body{
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 28%, rgba(8,23,130,1) 55%, rgba(6,83,170,1) 76%, rgba(0,212,255,1) 150%);
+            font: normal 18pt arial;
+        }
+        input{
+            height: 30px;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 400px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.712);
+            border: 2px solid;
+            line-height: 100px;
+        }
+        #title{
+            text-align: center;
+        }
+        #body{
+            text-align: center;
+            font: normal 20pt arial;
+            margin-top: 100px;
+        }
+        #res{
+            text-align: center;
+        }
+        #pes{
+            background: green;
+            height: 35px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div class = "card">
+            <div id="title">
+                <h1>Nacionalidade</h1>
+            </div>
+            <div id="body">
+                <h3>Qual pais você nasceu?</h3>
+                <input type="text" id="nac"/>
+                <input type="button" value="pesquisar" id ="pes" onclick="pesquisar()"/>
+            </div>
+            <div id="res">
+                Resposta...
+            </div>
+        </div>
+    </div>    
+    <script>
+        function pesquisar(){
+            var pais =document.querySelector('#nac')
+            var res = document.querySelector('#res')
+
+
+            if(pais.value.toLowerCase() == 'brasil'){
+                res.innerHTML = 'Você é <strong>brasileiro</strong>'
+            }
+            else{
+                res.innerHTML = 'Você é estrageiro'
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>
