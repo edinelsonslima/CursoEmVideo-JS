@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso em Video</title>
+
+    <link rel="stylesheet" href="estilo.css"/>
+    
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+
+    <section>
+        <div id="form">
+            <div id = "number">Numero: 
+                <input type="number" id="num">
+                <input type="button" id="cal" value="Calcular" onclick="calcular()">
+            </div>            
+            <div id ="op">
+                <input type="radio" name="radop" id = "add" checked>
+                    <label for='add'>Add</label>
+                <input type="radio" name="radop" id = "sub">
+                    <label for='sub'>Sub</label>
+                <input type="radio" name="radop" id = "mult">
+                    <label for='mult'>Mult</label>
+                <input type="radio" name="radop" id = "div">
+                    <label for='Div'>Div</label>
+            </div>
+            <div id = "res">
+                <select id = "sel" size = "10"></select>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>

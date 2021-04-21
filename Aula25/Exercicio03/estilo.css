@@ -1,0 +1,53 @@
+body{
+    background: rgb(36, 38, 122);
+    font: normal 15pt arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background: white;
+    border-radius: 5px;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.411);
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+#number{
+    text-align: left;
+}
+
+#num{
+    height: 20px;
+    margin-left: 8px;
+}
+
+#cal{
+    height: 26px;
+    width: 186px;
+}   
+
+#op{
+    margin-top: 40px;
+    width: 80px;
+}
+
+#res{
+    width: 30px;
+    margin-left: 90px;
+    margin-top: -120px;
+    text-align: left;
+}
+#sel{
+    width: 380px;
+}
